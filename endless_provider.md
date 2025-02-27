@@ -32,6 +32,7 @@ Endless -> dapp协议
 
 ---
 ### getAccount、connect
+###### 连接钱包账户
 ##### request()
 ##### return()
 ```
@@ -43,6 +44,7 @@ Endless -> dapp协议
 ```
 ---
 ### authorizePayment
+###### 授权免密支付
 ##### request()
 ```
 {
@@ -59,6 +61,7 @@ Endless -> dapp协议
 ```
 ---
 ### getAuthorizeLimit
+###### 当前授权信息
 ##### request()
 ```
 {
@@ -77,12 +80,14 @@ Endless -> dapp协议
 ```
 
 ### disconnect
+###### 断开连接
 ##### request()
 ##### return()
 ###### 仅公共数据
 
 ---
 ### signMessage
+###### 签名自定义消息
 ##### request()
 ```
 {
@@ -99,6 +104,7 @@ Endless -> dapp协议
 ```
 ---
 ### sendTransaction、signAndSubmitTransaction
+###### 发送交易数据上链
 ##### request()
 ```
 {
