@@ -121,7 +121,7 @@ Endless -> dapp协议
 }
 ```
 ---
-### transactionData
+### signTransaction
 ##### 仅签名交易
 ##### request()
 ```
