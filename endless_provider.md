@@ -136,3 +136,19 @@ Endless -> dapp协议
 "publicKey":""
 }
 ```
+---
+### packageTransaction
+##### request()
+```
+{
+"module":"",
+"moduleName":"",
+"functionName":"",
+"data":"",
+"argsData":["",""]
+}
+```
+##### response()
+```
+{ "rawData":"" }
+```
