@@ -39,8 +39,10 @@ Endless -> dapp协议
 ```
 {
 "address":"0xb60e8dd61c5d32be8058bb8eb970870f07233155",
-"cid":"",//nft头像ci1
-"avatar":""//hash头像
+"cid":"",//nft头像cid
+"avatar":"",//hash头像
+"uid":"",
+"nickname":""
 }
 ```
 ---
@@ -103,7 +105,7 @@ Endless -> dapp协议
 }
 ```
 ---
-### sendTransaction、signAndSubmitTransaction
+### signAndSubmitTransaction
 ###### 发送交易数据上链
 ##### request()
 ```
@@ -123,6 +125,22 @@ Endless -> dapp协议
 ---
 ### signTransaction
 ##### 仅签名交易
+##### request()
+```
+{
+"transactionData":"0x2c40fb1f18a8fdd9a1f894548120cdeb8b17976d34c38b0ccae8c4e7f41405b8c4000000000000000200000000000000000000000000000000000000000000000000000000000000010f656e646c6573735f6163636f756e74087472616e736665720002202c40fb1f18a8fdd9a1f894548120cdeb8b17976d34c38b0ccae8c4e7f41405b81000e1f505000000000000000000000000400d0300000000006400000000000000b2febf6700000000dd00"
+}
+```
+##### return()
+```
+{
+"signature":"0020611aee782334d189d7d4cf89f092c55b08194876366d44b21c9679e29f66edad40deade94b9640bf32f8c8d12ff93f5b9cb742439a4aea0d909bbd652194d3d9ad044bbae6dfda47c889af5801af83fca427874e46e439690e9916a0b32f173501",//签名数据
+"publicKey":""
+}
+```
+---
+### signBuildTransaction
+##### 用于多签验证结果
 ##### request()
 ```
 {
