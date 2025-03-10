@@ -13,6 +13,11 @@ Endless -> dapp协议
 "initData":{
   "network":"eds",//参数 ChainTab 表
 }
+"metadata":{
+  "title":"",
+  "url":"",
+  "icon":""
+}
 "data"://参考不同方法请求结构
 "from":""
 }
