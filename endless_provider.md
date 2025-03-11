@@ -175,3 +175,13 @@ Endless -> dapp协议
 ```
 { "rawData":"" }
 ```
+---
+### luffa_switchChain()
+##### request()
+```
+{ "targetNet":"eth"//切换的目标链 }
+```
+##### response()
+```
+{ "account":"0xb60e8dd61c5d32be8058bb8eb970870f07233155" }
+```
