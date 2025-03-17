@@ -32,13 +32,17 @@ Endless -> dapp协议
 ```
 ---
 ### ChainTab
-| Endless     | endless |
+| Chain       | network |
 |-------------|---------|
+| Endless     | endless |
 | EndlessTest | eds     |
+| Ethereum    | eth     |
+| SmartChain  | bsc     |
 
 ---
 ### connect
 ###### 连接钱包账户
+##### support ```endless、eds、eth、bsc```
 ##### request()
 ##### return()
 ```
@@ -52,6 +56,7 @@ Endless -> dapp协议
 ```
 ---
 ### authorizePayment
+##### support ```endless、eds```
 ###### 授权免密支付
 ##### request()
 ```
@@ -69,6 +74,7 @@ Endless -> dapp协议
 ```
 ---
 ### getAuthorizeLimit
+##### support ```endless、eds```
 ###### 当前授权信息
 ##### request()
 ```
@@ -88,6 +94,7 @@ Endless -> dapp协议
 ```
 
 ### disconnect
+##### support ```endless、eds、eth、bsc```
 ###### 断开连接
 ##### request()
 ##### return()
@@ -95,6 +102,7 @@ Endless -> dapp协议
 
 ---
 ### signMessage
+##### support ```endless、eds、eth、bsc```
 ###### 签名自定义消息
 ##### request()
 ```
@@ -111,14 +119,24 @@ Endless -> dapp协议
 ```
 ---
 ### signAndSubmitTransaction
+##### support ```endless、eds、eth、bsc```
 ###### 发送交易数据上链
-##### request()
+##### request() ```endless、eds```
 ```
 {
 "serializedTransaction":
     {
     "data":""//16进制数据
     }
+}
+```
+##### request() ```eth、bsc```
+```
+{
+"to": "0x4B0897b0513FdBeEc7C469D9aF4fA6C0752aBea7",
+"from": "0xdad87572446bc87c82ea2ff2b65cbc8ca04e44fe",
+"value": "0x8ac7230489e80000",
+"data": "0x",
 }
 ```
 ##### return()
@@ -129,6 +147,7 @@ Endless -> dapp协议
 ```
 ---
 ### signTransaction
+##### support ```endless、eds```
 ##### 仅签名交易
 ##### request()
 ```
@@ -145,6 +164,7 @@ Endless -> dapp协议
 ```
 ---
 ### signBuildTransaction
+##### support ```endless、eds```
 ##### 用于多签验证结果
 ##### request()
 ```
@@ -161,6 +181,7 @@ Endless -> dapp协议
 ```
 ---
 ### packageTransaction
+##### support ```endless、eds```
 ##### request()
 ```
 {
@@ -177,6 +198,7 @@ Endless -> dapp协议
 ```
 ---
 ### luffa_switchChain()
+##### support ```endless、eds、eth、bsc```
 ##### request()
 ```
 { "targetNet":"eth"//切换的目标链 }
