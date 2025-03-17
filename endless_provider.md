@@ -37,7 +37,7 @@ Endless -> dapp协议
 | EndlessTest | eds     |
 
 ---
-### getAccount、connect
+### connect
 ###### 连接钱包账户
 ##### request()
 ##### return()
