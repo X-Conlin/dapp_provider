@@ -118,6 +118,24 @@ Endless -> dapp协议
 }
 ```
 ---
+### evmApprove
+#### support ```eth、bsc```
+##### evm授权合约
+#### request()
+```
+{
+"to": "0x4B0897b0513FdBeEc7C469D9aF4fA6C0752aBea7",
+"from": "0xdad87572446bc87c82ea2ff2b65cbc8ca04e44fe",
+"data": "0x",
+}
+```
+#### response()
+```
+{
+"hash":""//txid
+}
+```
+---
 ### signAndSubmitTransaction
 ##### support ```endless、eds、eth、bsc```
 ###### 发送交易数据上链
@@ -135,7 +153,7 @@ Endless -> dapp协议
 {
 "to": "0x4B0897b0513FdBeEc7C469D9aF4fA6C0752aBea7",
 "from": "0xdad87572446bc87c82ea2ff2b65cbc8ca04e44fe",
-"value": "0x8ac7230489e80000",
+"value": "0x8ac7230489e80000",(根据交易传值，非必填)
 "data": "0x",
 }
 ```
@@ -197,7 +215,7 @@ Endless -> dapp协议
 { "rawData":"" }
 ```
 ---
-### luffa_switchChain()
+### luffa_switchChain
 ##### support ```endless、eds、eth、bsc```
 ##### request()
 ```
@@ -206,4 +224,14 @@ Endless -> dapp协议
 ##### response()
 ```
 { "account":"0xb60e8dd61c5d32be8058bb8eb970870f07233155" }
+```
+### currentChain
+##### support ```endless、eds、eth、bsc```
+##### request()
+##### response()
+```
+{
+"blockChainId":1,[使用chainList网站数据]
+"network":""
+}
 ```
