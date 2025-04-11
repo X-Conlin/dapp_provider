@@ -119,9 +119,9 @@ Endless -> dapp协议
 ```
 ---
 ### evmApprove
-#### support ```eth、bsc```
+#### support ```eth、bsc、tron```
 ##### evm授权合约
-#### request()
+#### request() ```eth、bsc```
 ```
 {
 "to": "0x4B0897b0513FdBeEc7C469D9aF4fA6C0752aBea7",
@@ -129,10 +129,23 @@ Endless -> dapp协议
 "data": "0x",
 }
 ```
-#### response()
+#### response() ```eth、bsc```
 ```
 {
 "hash":""//txid
+}
+```
+#### request() ```tron```
+```
+{
+"raw_data_hex":"abd22083b68434ef868be6240d0b9aa9de232..."
+"to":"abd22083b68434ef868be6240d0b9aa9de232..."
+}
+```
+#### response() ```tron```
+```
+{
+"signature":""//数组转换成","拼接字符串
 }
 ```
 ---
@@ -182,15 +195,20 @@ Endless -> dapp协议
 ```
 ---
 ### signBuildTransaction
-##### support ```endless、eds```
+##### support ```endless、eds、tron```
 ##### 用于多签验证结果
-##### request()
+##### request() ```endless、eds```
 ```
 {
 "transactionData":"0x2c40fb1f18a8fdd9a1f894548120cdeb8b17976d34c38b0ccae8c4e7f41405b8c4000000000000000200000000000000000000000000000000000000000000000000000000000000010f656e646c6573735f6163636f756e74087472616e736665720002202c40fb1f18a8fdd9a1f894548120cdeb8b17976d34c38b0ccae8c4e7f41405b81000e1f505000000000000000000000000400d0300000000006400000000000000b2febf6700000000dd00"
 }
 ```
-##### return()
+##### request() ```tron```
+```
+{ "raw_data_hex":"83b68434ef868be6240d0b..." }
+```
+##### return() ```endless、eds、tron```
+##### 其中tron的signature组成：jsoArray元素使用","拼接成字符串
 ```
 {
 "signature":"0020611aee782334d189d7d4cf89f092c55b08194876366d44b21c9679e29f66edad40deade94b9640bf32f8c8d12ff93f5b9cb742439a4aea0d909bbd652194d3d9ad044bbae6dfda47c889af5801af83fca427874e46e439690e9916a0b32f173501",//签名数据
