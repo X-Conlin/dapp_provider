@@ -42,7 +42,22 @@ Endless -> dapp协议
 ---
 ### connect
 ###### 连接钱包账户
-##### support ```endless、eds、eth、bsc```
+##### support ```endless、eds、eth、bsc、tron```
+##### request()
+##### return()
+```
+{
+"address":"0xb60e8dd61c5d32be8058bb8eb970870f07233155",
+"cid":"",//nft头像cid
+"avatar":"",//hash头像
+"uid":"",
+"nickname":""
+}
+```
+---
+### getAccount
+###### 根据参数network返回钱包地址 ---> 前置方法connect()
+##### support ```endless、eds、eth、bsc、tron```
 ##### request()
 ##### return()
 ```
@@ -94,7 +109,7 @@ Endless -> dapp协议
 ```
 
 ### disconnect
-##### support ```endless、eds、eth、bsc```
+##### support ```endless、eds、eth、bsc、tron```
 ###### 断开连接
 ##### request()
 ##### return()
@@ -102,7 +117,7 @@ Endless -> dapp协议
 
 ---
 ### signMessage
-##### support ```endless、eds、eth、bsc```
+##### support ```endless、eds、eth、bsc、tron```
 ###### 签名自定义消息
 ##### request()
 ```
@@ -119,7 +134,7 @@ Endless -> dapp协议
 ```
 ---
 ### evmApprove
-#### support ```eth、bsc、tron```
+#### support ```eth、bsc、tron、tron```
 ##### evm授权合约
 #### request() ```eth、bsc```
 ```
@@ -150,7 +165,7 @@ Endless -> dapp协议
 ```
 ---
 ### signAndSubmitTransaction
-##### support ```endless、eds、eth、bsc```
+##### support ```endless、eds、eth、bsc、tron```
 ###### 发送交易数据上链
 ##### request() ```endless、eds```
 ```
@@ -234,7 +249,7 @@ Endless -> dapp协议
 ```
 ---
 ### luffa_switchChain
-##### support ```endless、eds、eth、bsc```
+##### support ```endless、eds、eth、bsc、tron```
 ##### request()
 ```
 { "targetNet":"eth"//切换的目标链 }
@@ -244,7 +259,7 @@ Endless -> dapp协议
 { "account":"0xb60e8dd61c5d32be8058bb8eb970870f07233155" }
 ```
 ### currentChain
-##### support ```endless、eds、eth、bsc```
+##### support ```endless、eds、eth、bsc、tron```
 ##### request()
 ##### response()
 ```
