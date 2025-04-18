@@ -248,6 +248,17 @@ Endless -> dapp协议
 { "rawData":"" }
 ```
 ---
+### packageTransactionV2
+##### support ```endless、eds```
+##### request()
+```
+{ "data":""}
+```
+##### response()
+```
+{ "rawData":"" }
+```
+---
 ### luffa_switchChain
 ##### support ```endless、eds、eth、bsc、tron```
 ##### request()
