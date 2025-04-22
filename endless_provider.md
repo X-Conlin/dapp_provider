@@ -231,6 +231,18 @@ Endless -> dapp协议
 }
 ```
 ---
+### multipleSignApprove
+##### support ```endless、eds```
+##### 账户升级多签账户[仅签名不上链]
+##### request()
+```
+{"transactionData":""}
+```
+##### return()
+```
+{"signature":""}
+```
+---
 ### packageTransaction
 ##### support ```endless、eds```
 ##### request()
