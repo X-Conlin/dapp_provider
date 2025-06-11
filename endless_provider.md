@@ -292,3 +292,20 @@ Endless -> dapp协议
 "network":""
 }
 ```
+---
+### componentSignBuildTransaction
+##### support ```endless、eds```
+##### request()
+```
+{
+"data":""//16进制数据
+}
+```
+##### response()
+```
+{
+"signature":"0020611aee782334d189d7d4cf89f092c55b08194876366d44b21c9679e29f66edad40deade94b9640bf32f8c8d12ff93f5b9cb742439a4aea0d909bbd652194d3d9ad044bbae6dfda47c889af5801af83fca427874e46e439690e9916a0b32f173501",//签名数据
+"publicKey":""
+}
+```
+---
