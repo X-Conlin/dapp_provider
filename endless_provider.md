@@ -26,7 +26,7 @@ Endless -> dapp协议
 ```
 {
 "uuid":"qwerasdfzxcv1234",//16位随机字符串
-"status": 0,//0成功、-1失败、-2拒绝
+"status": success,//success、error、rejected
 "data"://参考不同方法响应结构
 "errorMsg":""
 }
