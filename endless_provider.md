@@ -134,6 +134,33 @@ Endless -> dapp协议
 }
 ```
 ---
+### signMessageV2
+##### support ```endless、eds、eth、bsc、tron```
+###### 签名自定义消息(增加安全验证)
+```
+{
+"message"："",
+"address":false,
+"application":false,
+"chainId":false,
+"nonce":"",
+}
+```
+##### return()
+```
+{
+"signResult":"",
+"publicKey":"",
+"chainId":0L,
+"address":"",//地址进行base58
+//Endless::Message\naddress:base58(address)\napplication:scheme+authority\nchainId:chainId\nmessage:message\nnonce:nonce
+"fullMessage":""
+"prefix":"",
+"message":""
+"application":""
+}
+```
+---
 ### evmApprove
 #### support ```eth、bsc、tron、tron```
 ##### evm授权合约
